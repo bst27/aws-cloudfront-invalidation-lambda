@@ -1,4 +1,4 @@
-#About
+# About
 This application can be used as (local) CLI or AWS Lambda application to invalidate
 AWS Cloudfront distributions. When running in AWS Lambda you may setup
 an AWS API Gateway to invoke the application via HTTPS (e.g. in a webhook).
@@ -10,7 +10,7 @@ When running on AWS Lambda make sure you give permissions to create
 invalidation requests to the corresponding execution role. When running
 as a CLI application make sure  you have setup an AWS credential provider.
 
-#Examples
+# Examples
 Curl request example:
 ```
 curl \
