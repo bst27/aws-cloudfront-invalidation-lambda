@@ -10,6 +10,23 @@ When running on AWS Lambda make sure you give permissions to create
 invalidation requests to the corresponding execution role. When running
 as a CLI application make sure  you have setup an AWS credential provider.
 
+# Config
+Permission statement to allow creating AWS Cloudfront invalidations. Give this
+permission to the AWS Lambda execution role:
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowCloudfrontCreateInvalidation",
+            "Effect": "Allow",
+            "Action": "cloudfront:CreateInvalidation",
+            "Resource": "arn:aws:cloudfront::<myAwsAccountId>:distribution/<myDistributionId>>"
+        }
+    ]
+}
+```
+
 # Examples
 Curl request example:
 ```
