@@ -10,6 +10,11 @@ When running on AWS Lambda make sure you give permissions to create
 invalidation requests to the corresponding execution role. When running
 as a CLI application make sure  you have setup an AWS credential provider.
 
+# Build
+Execute `script.sh` to build the project. You will receive two files in the `dist` directory:
+* **main** is the app executable
+* **lambda-function.zip** can be used to upload to AWS Lambda  
+
 # Config
 Permission statement to allow creating AWS Cloudfront invalidations. Give this
 permission to the AWS Lambda execution role:
