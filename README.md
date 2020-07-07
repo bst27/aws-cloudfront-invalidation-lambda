@@ -26,7 +26,10 @@ permission to the AWS Lambda execution role:
             "Sid": "AllowCloudfrontCreateInvalidation",
             "Effect": "Allow",
             "Action": "cloudfront:CreateInvalidation",
-            "Resource": "arn:aws:cloudfront::<myAwsAccountId>:distribution/<myDistributionId>>"
+            "Resource": [
+                "arn:aws:cloudfront::<myAwsAccountId>:distribution/<myDistributionId1>>",
+                "arn:aws:cloudfront::<myAwsAccountId>:distribution/<myDistributionId2>>",
+            ]
         }
     ]
 }
