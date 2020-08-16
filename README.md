@@ -1,3 +1,5 @@
+![aws-cloudfront-invalidation-lambda](https://raw.githubusercontent.com/bst27/aws-cloudfront-invalidation-lambda/master/website/banner.png)
+
 # About
 This application can be used as (local) CLI or AWS Lambda application to invalidate
 AWS Cloudfront distributions. When running in AWS Lambda you may setup
